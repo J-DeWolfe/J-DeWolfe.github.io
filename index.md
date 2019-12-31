@@ -32,6 +32,8 @@ To see this project on GitHub: [Contact List](https://github.com/J-DeWolfe/Conta
 
 Toby has two difficulty settings (default or easy) and can be disabled for two-player games. His logic can also be used by players to obtain strategic hints. Game progress can be saved mid-game and later loaded to continue the same game. An ongoing record of wins, losses, and ties is kept between sessions and displayed at the bottom of the user interface. Players can also choose the color of their X's and O's.
 
+<img src="images/TicTacTOBY-Screenshot.JPG"/>
+
 ```java
 //Sample Code
 static void selectSquare(int row, int col, String player) {
