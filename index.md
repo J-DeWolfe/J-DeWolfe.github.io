@@ -63,6 +63,7 @@ Although this started as a class assignment, very little of the original code re
 <img src="images/CrimeData-Screenshot.PNG"/>
 
 ```python
+#Sample Code
 def plotPieChart(title, gov, crimeDict, colormap = 'viridis'):
     framable = {}
     for key in crimeDict.keys():
@@ -80,14 +81,31 @@ To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolf
 
 
 ### Cipher (Java)
-A substitution cipher with a simple GUI.
+**A substitution cipher with a simple GUI.**
 
-```markdown
-Sample code
-Sample code
-Sample code
+This program is useful for encrypting (and later decrypting) simple blocks of text. The same password/key used to encrypt the message can later be used to decrypt it. A different password/key will, however, produce a different result. The cipher is therefore useful for encoding common emails or text messages, private local documents, and the like. Please note that the encryption scheme is somewhat basic and shouldn't be used for truly sensitive data.
+
+<img src="images/Cipher-Screenshot.PNG"/>
+
+```java
+//Sample Code
+public String cryptIt(String pwKey, String userText) {
+    createCipherGrid(pwKey); //Call method to create the cipher
+    String outStr = "";
+		
+    for (int i = 0; i < userText.length(); i++) {
+        int r = findRow(userText.charAt(i));
+	int c = findCol(userText.charAt(i));
+			
+	if (r >= 0 && c >= 0)
+	    outStr += String.valueOf(cipherGrid[c][r]); //If it's in the grid
+	else outStr += String.valueOf(userText.charAt(i)); //If it's not
+    }
+    return outStr; //Return encrypted or decrypted string
+}
 ```
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+To see this project on GitHub: [Cipher](https://github.com/J-DeWolfe/Cipher.git).
+
 
 ### Dual Data BST (C++)
 A binary search tree with nodes that each hold multiple data objects.
