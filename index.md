@@ -56,14 +56,28 @@ To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTa
 
 
 ### Crime Data Analysis (Python)
-Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).
+**Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
 
-```markdown
-Sample code
-Sample code
-Sample code
+Although this started as a class assignment, very little of the original code remains. The data is being used differently, all of the charts & tables were replaced, and most of the functions have been rewritten or renamed. Even the file names have changed. A greater emphasis has been placed on color, variety, and modularity.
+
+
+
+```python
+def plotPieChart(title, gov, crimeDict, colormap = 'viridis'):
+    framable = {}
+    for key in crimeDict.keys():
+        framable[len(framable)] = [crimeDict[key], key.title()]
+    
+    dFrame = pd.DataFrame.from_dict(framable, orient ='index', columns = ['Incidents', gov])  
+    
+    dFrame.plot.pie(x = gov, y = 'Incidents', explode = (0,0,0,0.1), legend = None, cmap = colormap,
+                    labels = crimeDict.keys(), autopct='%1.0f%%', shadow=True)
+    plt.gca().get_xaxis().set_label_text('')
+    plt.gca().get_yaxis().set_label_text('')
+    plt.show()
 ```
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolfe/CrimeDataAnalysis.git).
+
 
 ### Cipher (Java)
 A substitution cipher with a simple GUI.
