@@ -120,7 +120,7 @@ I intend to thoroughly test both of these ideas in the future.
 
 <img src="images/DualDataBST-Screenshot.JPG"/>
 
-```Cpp
+```cpp
 //Sample Code
 template <typename T1, typename T2>
 T2 BST<T1, T2>::getSecondaryData(T1 item1)
