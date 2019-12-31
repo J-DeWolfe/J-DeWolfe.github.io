@@ -24,7 +24,7 @@ private static class InsertAsyncTask extends AsyncTask< Contact, Void, Void> {
     }
 }
 ```
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+To see this project on GitHub: [Contact List](https://github.com/J-DeWolfe/ContactList.git).
 
 ### Tic-Tac-TOBY (Java)
 Tic-tac-toe with a primitive AI (named Toby) with whom to play against.
