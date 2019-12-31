@@ -2,6 +2,8 @@
 
 Words
 
+---
+
 ## Projects
 
 ### Contact List (XML/Java)
@@ -26,6 +28,7 @@ private static class InsertAsyncTask extends AsyncTask< Contact, Void, Void> {
 ```
 To see this project on GitHub: [Contact List](https://github.com/J-DeWolfe/ContactList.git).
 
+---
 
 ### Tic-Tac-TOBY (Java)
 **Tic-tac-toe with a primitive AI (named Toby) with whom to play against.**
@@ -54,6 +57,7 @@ static void selectSquare(int row, int col, String player) {
 ```
 To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTacTOBY.git).
 
+---
 
 ### Crime Data Analysis (Python)
 **Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
@@ -79,6 +83,7 @@ def plotPieChart(title, gov, crimeDict, colormap = 'viridis'):
 ```
 To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolfe/CrimeDataAnalysis.git).
 
+---
 
 ### Cipher (Java)
 **A substitution cipher with a simple GUI.**
@@ -106,6 +111,7 @@ public String cryptIt(String pwKey, String userText) {
 ```
 To see this project on GitHub: [Cipher](https://github.com/J-DeWolfe/Cipher.git).
 
+---
 
 ### Dual Data BST (C++)
 **A binary search tree with nodes that each hold multiple data objects.**
@@ -139,9 +145,13 @@ T2 BST<T1, T2>::getSecondaryData(dualDataNode<T1, T2> *p, T1 item1)
 ```
 To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/DualDataBST.git).
 
+---
+
 ## Something other than Projects
 
 Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/J-DeWolfe/J-DeWolfe.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+---
 
 ## Support or Contact
 
