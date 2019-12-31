@@ -4,8 +4,8 @@ Words
 
 ## Projects
 
-### Project #1
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Contact List
+An Android application that stores contact information in an SQLite database.
 
 ```markdown
 Sample code
@@ -14,8 +14,8 @@ Sample code
 ```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Project #2
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Tic-Tac-TOBY
+Tic-tac-toe with a primitive AI (named Toby) with whom to play against.
 
 ```markdown
 Sample code
@@ -24,8 +24,8 @@ Sample code
 ```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Project #3
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Crime Data Analysis
+Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).
 
 ```markdown
 Sample code
@@ -33,6 +33,45 @@ Sample code
 Sample code
 ```
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Cipher
+A substitution cipher with a simple GUI.
+
+```markdown
+Sample code
+Sample code
+Sample code
+```
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Dual Data BST
+A binary search tree with nodes that each hold multiple data objects.
+
+```markdown
+Sample code
+Sample code
+Sample code
+```
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Something other than Projects
