@@ -35,18 +35,20 @@ Toby has two difficulty settings (default or easy) and can be disabled for two-p
 ```java
 //Sample Code
 static void selectSquare(int row, int col, String player) {
-		if (!gameOver && player == currentPlayer && grid[row][col] == "") {
-			grid[row][col] = player;
-			gui.setSquare(row, col);
-			if (currentPlayer == "X") gui.setSquareTextColor(row, col, gui.xColor);
-			else gui.setSquareTextColor(row, col, gui.oColor);
-			setLastPlayed(row, col);
-			
-			isGameOver();
-			if (!gameOver) changeCurrentPlayer();
-			if (useToby && !gameOver && currentPlayer == "O") Toby.tobysTurn();
-		}
-	}
+    if (!gameOver && player == currentPlayer && grid[row][col] == "") {
+        grid[row][col] = player;
+	gui.setSquare(row, col);
+	
+	if (currentPlayer == "X") gui.setSquareTextColor(row, col, gui.xColor);
+	else gui.setSquareTextColor(row, col, gui.oColor);
+	
+	setLastPlayed(row, col);
+	isGameOver();
+	
+	if (!gameOver) changeCurrentPlayer();
+	if (useToby && !gameOver && currentPlayer == "O") Toby.tobysTurn();
+    }
+}
 ```
 To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTacTOBY.git).
 
