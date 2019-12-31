@@ -11,14 +11,12 @@ Utilizing the Android Room Persistance Library, this application includes a Room
 
 ```java
 //Sample Code
-private static class InsertAsyncTask extends AsyncTask< Contact, Void, Void>
-{
+private static class InsertAsyncTask extends AsyncTask< Contact, Void, Void> {
     private  ContactDao asyncTaskDao;
     InsertAsyncTask(ContactDao dao) { asyncTaskDao = dao; }
 
     @Override
-    protected Void doInBackground(final Contact... params)
-    {
+    protected Void doInBackground(final Contact... params) {
         asyncTaskDao.insertContact(params[0]);
         return null;
     }
