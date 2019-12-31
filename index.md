@@ -60,7 +60,7 @@ To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTa
 
 Although this started as a class assignment, very little of the original code remains. The data is being used differently, all of the charts & tables were replaced, and most of the functions have been rewritten or renamed. Even the file names have changed. A greater emphasis has been placed on color, variety, and modularity.
 
-
+<img src="images/CrimeData-Screenshot.PNG"/>
 
 ```python
 def plotPieChart(title, gov, crimeDict, colormap = 'viridis'):
