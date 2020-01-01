@@ -1,12 +1,6 @@
-# PORTFOLIO
+# Projects
 
-Words
-
----
-
-## Projects
-
-### Contact List (XML/Java)
+## Contact List (XML/Java)
 **An Android application that stores contact information in an SQLite database.**
 
 Utilizing the Android Room Persistance Library, this application includes a RoomDatabse, repository, DAO, and entities. It also includes a Fragment plus ViewModel design, a RecyclerView.Adapter plus CardView layout, and a number of AsyncTasks. The user interface features a Floating Action Button, as well as an overflow menu. Custom Toasts are used to communicate with the user. The application can be installed on a physical Android device via Android Studio.
@@ -30,7 +24,7 @@ To see this project on GitHub: [Contact List](https://github.com/J-DeWolfe/Conta
 
 ---
 
-### Tic-Tac-TOBY (Java)
+## Tic-Tac-TOBY (Java)
 **Tic-tac-toe with a primitive AI (named Toby) with whom to play against.**
 
 Toby has two difficulty settings (default or easy) and can be disabled for two-player games. His logic can also be used by players to obtain strategic hints. Game progress can be saved mid-game and later loaded to continue the same game. An ongoing record of wins, losses, and ties is kept between sessions and displayed at the bottom of the user interface. Players can also choose the color of their X's and O's.
@@ -59,7 +53,7 @@ To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTa
 
 ---
 
-### Crime Data Analysis (Python)
+## Crime Data Analysis (Python)
 **Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
 
 Although this started as a class assignment, very little of the original code remains. The data is being used differently, all of the charts & tables were replaced, and most of the functions have been rewritten or renamed. Even the file names have changed. A greater emphasis has been placed on color, variety, and modularity.
@@ -81,7 +75,7 @@ To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolf
 
 ---
 
-### Cipher (Java)
+## Cipher (Java)
 **A substitution cipher with a simple GUI.**
 
 This program is useful for encrypting (and later decrypting) simple blocks of text. The same password/key used to encrypt the message can later be used to decrypt it. A different password/key will, however, produce a different result. The cipher is therefore useful for encoding common emails or text messages, private local documents, and the like. Please note that the encryption scheme is somewhat basic and shouldn't be used for truly sensitive data.
@@ -109,7 +103,7 @@ To see this project on GitHub: [Cipher](https://github.com/J-DeWolfe/Cipher.git)
 
 ---
 
-### Dual Data BST (C++)
+## Dual Data BST (C++)
 **A binary search tree with nodes that each hold multiple data objects.**
 
 The DualDataBST is really just a personal experiment, but it does have a couple of potential uses.
@@ -143,13 +137,13 @@ To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/Dual
 
 ---
 
-## More
+# More
 
 More projects?
 Something else?
 
 ---
 
-## Contact Me
+# Contact Me
 
 Put some contact info here
