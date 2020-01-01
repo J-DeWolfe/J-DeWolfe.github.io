@@ -140,6 +140,10 @@ To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/Dual
 
 # Other Projects
 
-COMING SOON
+- COMING SOON
 
 ---
+
+# This Portfolio
+
+- [This Portfolio (Markdown)](https://github.com/J-DeWolfe/J-DeWolfe.github.io.git)
