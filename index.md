@@ -1,4 +1,5 @@
 # Projects
+---
 
 ## Contact List (XML/Java)
 **An Android application that stores contact information in an SQLite database.**
