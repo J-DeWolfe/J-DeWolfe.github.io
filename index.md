@@ -136,7 +136,7 @@ T2 BST<T1, T2>::getSecondaryData(dualDataNode<T1, T2> *p, T1 item1)
 	if (p == NULL) return NULL;
 	if (p->data1 == item1) return p->data2;
 	if (p->data1 > item1) return getSecondaryData(p->left, item1);
-	else return getSecondaryData(p->right, item1);
+	else return getSecondaryData(p->right, item1); //Recursive
 }
 ```
 To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/DualDataBST.git).
