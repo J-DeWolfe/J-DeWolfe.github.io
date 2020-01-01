@@ -138,13 +138,8 @@ To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/Dual
 
 ---
 
-# More
+# Other Projects
 
-More projects?
-Something else?
+COMING SOON
 
 ---
-
-# Contact Me
-
-Put some contact info here
