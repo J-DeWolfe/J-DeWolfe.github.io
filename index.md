@@ -68,18 +68,14 @@ Although this started as a class assignment, very little of the original code re
 
 ```python
 #Sample Code
-def plotPieChart(title, gov, crimeDict, colormap = 'viridis'):
-    framable = {}
-    for key in crimeDict.keys():
-        framable[len(framable)] = [crimeDict[key], key.title()]
-    
-    dFrame = pd.DataFrame.from_dict(framable, orient ='index', columns = ['Incidents', gov])  
-    
-    dFrame.plot.pie(x = gov, y = 'Incidents', explode = (0,0,0,0.1), legend = None, cmap = colormap,
-                    labels = crimeDict.keys(), autopct='%1.0f%%', shadow=True)
-    plt.gca().get_xaxis().set_label_text('')
-    plt.gca().get_yaxis().set_label_text('')
-    plt.show()
+def getSpecificCrime(crime_data, gov, crime):
+    specific_crime = {}
+    for city in crime_data:
+        if city[gov] in specific_crime.keys():
+            specific_crime[city[gov]] += int(city[crime])
+        else:
+            specific_crime[city[gov]] = int(city[crime])
+    return specific_crime
 ```
 To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolfe/CrimeDataAnalysis.git).
 
@@ -95,7 +91,7 @@ This program is useful for encrypting (and later decrypting) simple blocks of te
 ```java
 //Sample Code
 public String cryptIt(String pwKey, String userText) {
-    createCipherGrid(pwKey); //Call method to create the cipher
+    createCipherGrid(pwKey); //Unique to each password/key
     String outStr = "";
 		
     for (int i = 0; i < userText.length(); i++) {
@@ -106,7 +102,7 @@ public String cryptIt(String pwKey, String userText) {
 	    outStr += String.valueOf(cipherGrid[c][r]); //If it's in the grid
 	else outStr += String.valueOf(userText.charAt(i)); //If it's not
     }
-    return outStr; //Return encrypted or decrypted string
+    return outStr; //Return encrypted/decrypted message
 }
 ```
 To see this project on GitHub: [Cipher](https://github.com/J-DeWolfe/Cipher.git).
