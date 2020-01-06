@@ -139,7 +139,7 @@ To see this project on GitHub: [Dual Data BST](https://github.com/J-DeWolfe/Dual
 ---
 
 ## Other Projects
-
+- [Evolution Simulator (C++)](https://github.com/J-DeWolfe/EvolutionSimulator.git)
 - [Dice Roller 2.0 (Java)](https://github.com/J-DeWolfe/DiceRoller2.git)
 - [This Portfolio (Markdown)](https://github.com/J-DeWolfe/J-DeWolfe.github.io.git)
 - [More ...](https://github.com/J-DeWolfe)
