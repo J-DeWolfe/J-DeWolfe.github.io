@@ -1,4 +1,27 @@
 # Projects
+
+---
+
+## Crime Data Analysis (Python)
+**Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
+
+Although this started as a class assignment, very little of the original code remains. The data is being used differently, all of the charts & tables were replaced, and most of the functions have been rewritten or renamed. Even the file names have changed. A greater emphasis has been placed on color, variety, and modularity.
+
+<img src="images/CrimeData-Screenshot.PNG"/>
+
+```python
+#Sample Code
+def getSpecificCrime(crime_data, gov, crime):
+    specific_crime = {}
+    for city in crime_data:
+        if city[gov] in specific_crime.keys():
+            specific_crime[city[gov]] += int(city[crime])
+        else:
+            specific_crime[city[gov]] = int(city[crime])
+    return specific_crime
+```
+To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolfe/CrimeDataAnalysis.git).
+
 ---
 
 ## Contact List (XML/Java)
@@ -51,28 +74,6 @@ static void selectSquare(int row, int col, String player) {
 }
 ```
 To see this project on GitHub: [Tic-Tac-TOBY](https://github.com/J-DeWolfe/TicTacTOBY.git).
-
----
-
-## Crime Data Analysis (Python)
-**Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
-
-Although this started as a class assignment, very little of the original code remains. The data is being used differently, all of the charts & tables were replaced, and most of the functions have been rewritten or renamed. Even the file names have changed. A greater emphasis has been placed on color, variety, and modularity.
-
-<img src="images/CrimeData-Screenshot.PNG"/>
-
-```python
-#Sample Code
-def getSpecificCrime(crime_data, gov, crime):
-    specific_crime = {}
-    for city in crime_data:
-        if city[gov] in specific_crime.keys():
-            specific_crime[city[gov]] += int(city[crime])
-        else:
-            specific_crime[city[gov]] = int(city[crime])
-    return specific_crime
-```
-To see this project on GitHub: [Crime Data Analysis](https://github.com/J-DeWolfe/CrimeDataAnalysis.git).
 
 ---
 
