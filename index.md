@@ -27,7 +27,6 @@ public void showPoster(String p) {
 	catch (MalformedURLException e1) { if (p != defaultPosterURL) showPoster(); } //Show this, instead of an error
 	catch (IOException e1) { e1.printStackTrace(); }
 }	
-
 ```
 To see this project on GitHub: [Movie Data LookUp](https://github.com/J-DeWolfe/MovieDataLookUp)
 
