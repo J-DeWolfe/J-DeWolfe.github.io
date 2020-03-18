@@ -21,8 +21,8 @@ public void showPoster(String p) {
 		float scaleRatio = (float)w/(float)moviePoster.getWidth();
 		int h = (int)(scaleRatio * moviePoster.getHeight());
 
-		Image scaledMoviePosted = moviePoster.getScaledInstance(w, h, Image.SCALE_SMOOTH);
-		moviePosterOutput.setIcon(new ImageIcon(scaledMoviePosted));
+		Image scaledMoviePoster = moviePoster.getScaledInstance(w, h, Image.SCALE_SMOOTH);
+		moviePosterOutput.setIcon(new ImageIcon(scaledMoviePoster));
 	} 
 	catch (MalformedURLException e1) { if (p != defaultPosterURL) showPoster(); } //Show this, instead of an error
 	catch (IOException e1) { e1.printStackTrace(); }
