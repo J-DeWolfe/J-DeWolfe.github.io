@@ -1,6 +1,36 @@
 # Projects
 
 ---
+## Movie Data LookUp (Java)
+**Requests a JSON String from the OMDB RESTful API and displays the data (including the movie poster).**
+
+Inspired by class assignment, this Java program requests information from the OMDB RESTful API. An API key is required. The service returns move data in the form of a JSON string. The program displays the data in a format that is easy to read. Among the data, there is often a string representation of a URL where the movie poster can be found. This program also displays that image.
+
+<img src="images/MovieLookUp-Screenshot.JPG"/>
+
+```java
+//Sample Code
+public void showPoster() { showPoster(defaultPosterURL); }
+	
+public void showPoster(String p) {
+	URL posterURL;
+	try { 
+		posterURL = new URL(p);
+		moviePoster = ImageIO.read(posterURL);
+		int w = (width/2)-border-margin; //Fill column width
+		float scaleRatio = (float)w/(float)moviePoster.getWidth();
+		int h = (int)(scaleRatio * moviePoster.getHeight());
+
+		Image scaledMoviePosted = moviePoster.getScaledInstance(w, h, Image.SCALE_SMOOTH);
+		moviePosterOutput.setIcon(new ImageIcon(scaledMoviePosted));
+	} 
+	catch (MalformedURLException e1) { if (p != defaultPosterURL) showPoster(); } //Show this, instead of an error
+	catch (IOException e1) { e1.printStackTrace(); }
+}	
+
+```
+
+---
 
 ## Crime Data Analysis (Python)
 **Reads FBI crime data from a JSON file and presents the data with a series of charts & tables (mostly pandas).**
