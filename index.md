@@ -29,6 +29,7 @@ public void showPoster(String p) {
 }	
 
 ```
+To see this project on GitHub: [Movie Data LookUp](https://github.com/J-DeWolfe/MovieDataLookUp)
 
 ---
 
