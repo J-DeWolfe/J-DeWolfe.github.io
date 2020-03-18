@@ -28,7 +28,7 @@ public void showPoster(String p) {
 	catch (IOException e1) { e1.printStackTrace(); }
 }	
 ```
-To see this project on GitHub: [Movie Data LookUp](https://github.com/J-DeWolfe/MovieDataLookUp)
+To see this project on GitHub: [Movie Data LookUp](https://github.com/J-DeWolfe/MovieDataLookUp).
 
 ---
 
